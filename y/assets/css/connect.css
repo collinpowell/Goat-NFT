@@ -1,0 +1,38 @@
+.about__initial {
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+.view-item {
+    border: none;
+}
+
+.btn {
+    padding: 20px 10px;
+    border: 0.2px solid rgba(119, 126, 144, 0.25);
+    margin: 10px 0;
+    border-radius: 20px;
+    color: var(--title-color);
+    font-family: oduda;
+    font-size: 20px;
+}
+
+.btn img {
+    width: 10px;
+    height: 10px;
+    transform: scale(5);
+    transition: transform 0.5s ease;
+}
+
+.btn:hover img {
+    transform: scale(6);
+}
+
+.btn i {
+    display: none;
+    transition: transform 1s ease;
+}
+
+.btn:hover i {
+    display: inline;
+}

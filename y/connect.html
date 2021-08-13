@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Goat NFT | Connect To Wallet</title>
+    <!-- BOX ICONS -->
+    <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+    <link href="./assets/css/styles.css" rel="stylesheet" />
+    <link href="./assets/css/connect.css" rel="stylesheet" />
+
+    <link rel="icon" href="./assets/img/logo.png" type="image/x-icon">
+
+
+</head>
+
+<body>
+    <!-- ===== Scroll to top ===== -->
+    <a href="#" class="scrolltop" id="scroll-top">
+        <i class="bx bx-chevron-up scrolltop__icon"></i>
+    </a>
+
+    <header class="l-header" id="header">
+        <nav class="nav bd-container">
+            <a href="./index.html"> <img src="./assets/img/logo.png" alt="GOAT" class="nav__logo">
+            </a>
+
+
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item sp"><a href="#" class="nav__link">Explore</a></li>
+                    <li class="nav__item sp"><a href="#" class="nav__link">My Items</a></li>
+                    <li class="nav__item dropdown sp"><a href="#" class="nav__link dropdown__link" onclick="myFunction()">Resourses <i class="bx bx-chevron-down"></i> </a>
+                        <ul class="dropdown__menu" id="dropdown__menu">
+                            <li class="dropdown__item"><a href="#" class="nav__link">Documents</a></li>
+                            <li class="dropdown__item"><a href="#" class="nav__link">Community</a></li>
+                            <li class="dropdown__item"><a href="#" class="nav__link">FAQ</a></li>
+                            <li class="dropdown__item"><a href="#" class="nav__link">GOAT Token</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+
+
+            <!-- The form -->
+            <form class="search" action="">
+                <button type="submit"><i class="bx bx-search"></i></button>
+                <input type="text" placeholder="Search.." name="search">
+            </form>
+
+
+
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="./upload.html" class="nav__link">
+                            <button class="upload">Upload</button>
+                        </a>
+                    </li>
+
+
+                    <li class="nav__item">
+                        <a href="#" class="nav__link">
+                            <a href="#" class="nav__link">
+                                <button class="connect">Connect</button>
+                            </a>
+                        </a>
+                    </li>
+                </ul>
+
+            </div>
+
+            <div class="nav__toggle" id="nav-toggle">
+                <i class='bx bx-menu-alt-right'></i>
+            </div>
+
+
+        </nav>
+        <!-- Cart -->
+        <div class="menu-overlay">
+            <div class="menu">
+                <div class="close-menu">
+                    <i class='bx bx-exit bx-flip-horizontal'></i>
+                </div>
+                <ul class="nav__list">
+                    <li class="nav__item sp"><a href="#" class="nav__link">Explore</a></li>
+                    <li class="nav__item sp"><a href="#" class="nav__link">My Items</a></li>
+                    <li class="nav__item dropdown sp"><a href="#" class="nav__link dropdown__link" onclick="myFunction()">Resourses <i class="bx bx-chevron-down"></i> </a>
+                        <ul class="dropdown__menu" id="dropdown__menu">
+                            <li class="dropdown__item"><a href="#" class="nav__link">Documents</a></li>
+                            <li class="dropdown__item"><a href="#" class="nav__link">Community</a></li>
+                            <li class="dropdown__item"><a href="#" class="nav__link">FAQ</a></li>
+                            <li class="dropdown__item"><a href="#" class="nav__link">GOAT Token</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="./upload.html" class="nav__link">
+                            <button class="upload">Upload</button>
+                        </a>
+                    </li>
+
+
+                    <li class="nav__item">
+                        <a href="#" class="nav__link">
+                            <a href="#" class="nav__link">
+                                <button class="connect">Connect</button>
+                            </a>
+                        </a>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+        <!-- End Of Cart -->
+    </header>
+    <section class="about section bd-container " id="about " style="position: relative;top: 100px;">
+
+        <div class="about__container bd-grid ">
+
+            <img src="./assets/img/wwal.gif " class="about__img" alt="about">
+
+
+            <div class="about__data ">
+                <span class="section-subtitle about__initial ">Connect To Wallet</span>
+
+                <div class="btns">
+                    <div class="btn">
+                        <img src="./assets/img/800px-MetaMask_Fox.svg.png" alt="">
+                        <button class="view-item ">  Meta Mask</button>
+                        <i class='bx bxs-right-arrow'></i>
+                    </div>
+                    <div class="btn">
+                        <img src="./assets/img/walletConnect.png" alt="">
+                        <button class="view-item ">  Wallet Connect</button>
+                        <i class='bx bxs-right-arrow'></i>
+                    </div>
+
+                </div>
+            </div>
+
+
+        </div>
+
+    </section>
+    <main style="position: relative;top: 150px;">
+        <!--========== FOOTER ==========-->
+        <footer class="footer">
+            <div class="footer-overlay">
+
+                <div class="newsletter">
+                    <h2>Suscribe to our newletter</h2>
+                    <p>Subscribe our newsletter to get more updates on our events and activities</p>
+                    <!-- The form -->
+                    <form class="news" action="">
+
+                        <input type="text" placeholder="Email" name="search">
+                        <button type="submit">Subscribe</button>
+
+                    </form>
+                </div>
+
+                <div class="footer__container bd-grid ">
+                    <div class="footer__content " style="margin-left: 0px;margin-bottom:40px;">
+
+
+                        <a href="./index.html" class=" "><img src="./assets/img/logo.png " style="height: 130px;width: 130px; " alt=" " srcset=" "></a>
+                        <span class="footer__description ">The new creative economy.</span>
+                        <div>
+                            <a href="# " class="footer__social "><i class='bx bxl-facebook'></i></a>
+                            <a href="# " class="footer__social "><i class='bx bxl-instagram'></i></a>
+                            <a href="# " class="footer__social "><i class='bx bxl-twitter'></i></a>
+                        </div>
+                        <div class="mode">
+                            <i class="bx bx-moon" id="mode"></i>
+                        </div>
+
+                    </div>
+
+                    <div class="footer__content ">
+                        <h3 class="footer__title ">Goat NFT</h3>
+                        <ul>
+                            <li><a href="# " class="footer__link ">Explore</a></li>
+                            <li><a href="# " class="footer__link ">My Items</a></li>
+                            <li><a href="# " class="footer__link ">How it works</a></li>
+                            <li><a href="# " class="footer__link ">Connect Wallet</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer__content ">
+                        <h3 class="footer__title ">Resources</h3>
+                        <ul>
+                            <li><a href="# " class="footer__link ">Documents </a></li>
+                            <li><a href="# " class="footer__link ">Community</a></li>
+                            <li><a href="# " class="footer__link ">FAQ</a></li>
+                            <li><a href="# " class="footer__link ">GOAT Token</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer__content ">
+                        <h3 class="footer__title ">Information</h3>
+                        <ul>
+                            <li><a href="# " class="footer__link ">Event</a></li>
+                            <li><a href="# " class="footer__link ">Contact us</a></li>
+                            <li><a href="# " class="footer__link ">Privacy Policies</a></li>
+                            <li><a href="# " class="footer__link ">Terms and Conditions</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <hr>
+
+                <p class="footer__copy">&#169; 2021 . All right reserved</p>
+            </div>
+        </footer>
+        <!--========== FOOTER END ==========-->
+    </main>
+
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="./assets/slick-1.8.1/slick/slick.min.js"></script>
+    <script src="./assets/js/main.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Goat NFT | Explore</title>
+    <!-- BOX ICONS -->
+    <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+    <link href="./assets/css/styles.css" rel="stylesheet" />
+    <link href="./assets/css/explore.css" rel="stylesheet" />
+    <link rel="icon" href="./assets/img/logo.png" type="image/x-icon">
+
+</head>
+
+<body>
+    <!-- ===== Scroll to top ===== -->
+    <a href="#" class="scrolltop" id="scroll-top">
+        <i class="bx bx-chevron-up scrolltop__icon"></i>
+    </a>
+
+    <header class="l-header" id="header">
+        <nav class="nav bd-container">
+            <a href="./index.html"> <img src="./assets/img/logo.png" alt="GOAT" class="nav__logo">
+            </a>
+
+
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item sp"><a href="#" class="nav__link">Explore</a></li>
+                    <li class="nav__item sp"><a href="#" class="nav__link">My Items</a></li>
+                    <li class="nav__item dropdown sp"><a href="#" class="nav__link dropdown__link" onclick="myFunction()">Resourses <i class="bx bx-chevron-down"></i> </a>
+                        <ul class="dropdown__menu" id="dropdown__menu">
+                            <li class="dropdown__item"><a href="#" class="nav__link">Documents</a></li>
+                            <li class="dropdown__item"><a href="#" class="nav__link">Community</a></li>
+                            <li class="dropdown__item"><a href="#" class="nav__link">FAQ</a></li>
+                            <li class="dropdown__item"><a href="#" class="nav__link">GOAT Token</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+
+
+            <!-- The form -->
+            <form class="search" action="">
+                <button type="submit"><i class="bx bx-search"></i></button>
+                <input type="text" placeholder="Search.." name="search">
+            </form>
+
+
+
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="./upload.html" class="nav__link">
+                            <button class="upload">Upload</button>
+                        </a>
+                    </li>
+
+
+                    <li class="nav__item">
+                        <a href="#" class="nav__link">
+                            <a href="./connect.html" class="nav__link">
+                                <button class="connect">Connect</button>
+                            </a>
+                        </a>
+                    </li>
+                </ul>
+
+            </div>
+
+            <div class="nav__toggle" id="nav-toggle">
+                <i class='bx bx-menu-alt-right'></i>
+            </div>
+
+
+        </nav>
+        <!-- Cart -->
+        <div class="menu-overlay">
+            <div class="menu">
+                <div class="close-menu">
+                    <i class='bx bx-exit bx-flip-horizontal'></i>
+                </div>
+                <ul class="nav__list">
+                    <li class="nav__item sp"><a href="#" class="nav__link">Explore</a></li>
+                    <li class="nav__item sp"><a href="#" class="nav__link">My Items</a></li>
+                    <li class="nav__item dropdown sp"><a href="#" class="nav__link dropdown__link" onclick="myFunction()">Resourses <i class="bx bx-chevron-down"></i> </a>
+                        <ul class="dropdown__menu" id="dropdown__menu">
+                            <li class="dropdown__item"><a href="#" class="nav__link">Documents</a></li>
+                            <li class="dropdown__item"><a href="#" class="nav__link">Community</a></li>
+                            <li class="dropdown__item"><a href="#" class="nav__link">FAQ</a></li>
+                            <li class="dropdown__item"><a href="#" class="nav__link">GOAT Token</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="./upload.html" class="nav__link">
+                            <button class="upload">Upload</button>
+                        </a>
+                    </li>
+
+
+                    <li class="nav__item">
+                        <a href="#" class="nav__link">
+                            <a href="./connect.html" class="nav__link">
+                                <button class="connect">Connect</button>
+                            </a>
+                        </a>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+        <!-- End Of Cart -->
+    </header>
+
+    <main style="position: relative;top: 150px;">
+        <h3 class="headerss" style="font-size: 25px;color:var(--title-color);">Filters <i class='bx bx-filter-alt bx-tada bx-flip-horizontal'></i></h3>
+        <section class="filter">
+            <div class="filterDiv">
+                <div class="slidecontainer">
+
+                    <div class="range">
+                        <div class="range__label">Price range</div>
+                        <input type="range" min="0.01" max="10" value="5" class="slider" step="0.01" id="myRange">
+                        <p> <span id="demo"></span> GOAT</p>
+
+                        <div class="range__indicators">
+                            <div class="range__text">0.01 GOAT</div>
+                            <div class="range__text">10 GOAT</div>
+                        </div>
+                    </div>
+
+                    <div class="categories">
+                        <label for="categories ">Select Category</label>
+                        <select title="categories " name="categories " id="categories">
+                            <option value="0 ">All NFT</option>
+                            <option value="1">Sport Star NFT</option>
+                            <option value="2">Movie Star NFT</option>
+                            <option value="3">Music Star NFT</option>
+                            <option value="4">Athletes NFT</option>
+                            <option value="5">Inventors NFT</option>
+                            <option value="6">Business Leaders NFT</option>
+                            <option value="7">Religious Leaders NFT</option>
+                            <option value="8">Military Combatants NFT</option>
+                        </select>
+                        <br />
+                    </div>
+
+                    <div class="newest">
+                        <select title="newest" name="newest" id="newest">
+                            <option value="0 ">Newest</option>
+                            <option value="1">Oldest</option>
+                        </select>
+                        <br />
+                    </div>
+
+                    <div id="loader"></div>
+                </div>
+
+                <script>
+                    var slider = document.getElementById("myRange");
+                    var output = document.getElementById("demo");
+                    output.innerHTML = slider.value;
+
+                    slider.oninput = function() {
+                        output.innerHTML = this.value;
+                    }
+                </script>
+            </div>
+        </section>
+
+        <hr>
+        <br>
+        <br>
+
+        <section id="discover">
+            <div class="discover">
+                <div class="discoverCards">
+
+                    <div class="discoverCard">
+                        <img src="./assets/img/arnold.jpeg" alt="nft" class="nft-img">
+                        <div class="l1">
+                            <p class="left">Mr Goat</p>
+                            <p class="right">2.345 GOAT</p>
+                        </div>
+                        <div class="l2">
+                            <p class="left">Fixed Price</p>
+                            <p class="right">2 <i class='bx bxs-heart' style="color: red;"></i></p>
+                        </div>
+                        <hr>
+                        <div class="l2">
+                            <p class="left"><i class='bx bx-line-chart'></i> Fixed Sale</p>
+                            <p class="right">New NFT <img src="./assets/img/fire.png" class="fire" alt=""></p>
+                        </div>
+                    </div>
+                    <div class="discoverCard">
+                        <img src="./assets/img/arnold.jpeg" alt="nft" class="nft-img">
+                        <div class="l1">
+                            <p class="left">Mr Goat</p>
+                            <p class="right">2.345 GOAT</p>
+                        </div>
+                        <div class="l2">
+                            <p class="left">Fixed Price</p>
+                            <p class="right">2 <i class='bx bxs-heart' style="color: red;"></i></p>
+                        </div>
+                        <hr>
+                        <div class="l2">
+                            <p class="left"><i class='bx bx-line-chart'></i> Fixed Sale</p>
+                            <p class="right">New NFT <img src="./assets/img/fire.png" class="fire" alt=""></p>
+                        </div>
+                    </div>
+                    <div class="discoverCard">
+                        <img src="./assets/img/arnold.jpeg" alt="nft" class="nft-img">
+                        <div class="l1">
+                            <p class="left">Mr Goat</p>
+                            <p class="right">2.345 GOAT</p>
+                        </div>
+                        <div class="l2">
+                            <p class="left">Fixed Price</p>
+                            <p class="right">2 <i class='bx bxs-heart' style="color: red;"></i></p>
+                        </div>
+                        <hr>
+                        <div class="l2">
+                            <p class="left"><i class='bx bx-line-chart'></i> Fixed Sale</p>
+                            <p class="right">New NFT <img src="./assets/img/fire.png" class="fire" alt=""></p>
+                        </div>
+                    </div>
+                    <div class="discoverCard">
+                        <img src="./assets/img/arnold.jpeg" alt="nft" class="nft-img">
+                        <div class="l1">
+                            <p class="left">Mr Goat</p>
+                            <p class="right">2.345 GOAT</p>
+                        </div>
+                        <div class="l2">
+                            <p class="left">Fixed Price</p>
+                            <p class="right">2 <i class='bx bxs-heart' style="color: red;"></i></p>
+                        </div>
+                        <hr>
+                        <div class="l2">
+                            <p class="left"><i class='bx bx-line-chart'></i> Fixed Sale</p>
+                            <p class="right">New NFT <img src="./assets/img/fire.png" class="fire" alt=""></p>
+                        </div>
+                    </div>
+                    <div class="discoverCard">
+                        <img src="./assets/img/arnold.jpeg" alt="nft" class="nft-img">
+                        <div class="l1">
+                            <p class="left">Mr Goat</p>
+                            <p class="right">2.345 GOAT</p>
+                        </div>
+                        <div class="l2">
+                            <p class="left">Fixed Price</p>
+                            <p class="right">2 <i class='bx bxs-heart' style="color: red;"></i></p>
+                        </div>
+                        <hr>
+                        <div class="l2">
+                            <p class="left"><i class='bx bx-line-chart'></i> Fixed Sale</p>
+                            <p class="right">New NFT <img src="./assets/img/fire.png" class="fire" alt=""></p>
+                        </div>
+                    </div>
+                    <div class="discoverCard">
+                        <img src="./assets/img/arnold.jpeg" alt="nft" class="nft-img">
+                        <div class="l1">
+                            <p class="left">Mr Goat</p>
+                            <p class="right">2.345 GOAT</p>
+                        </div>
+                        <div class="l2">
+                            <p class="left">Fixed Price</p>
+                            <p class="right">2 <i class='bx bxs-heart' style="color: red;"></i></p>
+                        </div>
+                        <hr>
+                        <div class="l2">
+                            <p class="left"><i class='bx bx-line-chart'></i> Fixed Sale</p>
+                            <p class="right">New NFT <img src="./assets/img/fire.png" class="fire" alt=""></p>
+                        </div>
+                    </div>
+                    <div class="discoverCard">
+                        <img src="./assets/img/arnold.jpeg" alt="nft" class="nft-img">
+                        <div class="l1">
+                            <p class="left">Mr Goat</p>
+                            <p class="right">2.345 GOAT</p>
+                        </div>
+                        <div class="l2">
+                            <p class="left">Fixed Price</p>
+                            <p class="right">2 <i class='bx bxs-heart' style="color: red;"></i></p>
+                        </div>
+                        <hr>
+                        <div class="l2">
+                            <p class="left"><i class='bx bx-line-chart'></i> Fixed Sale</p>
+                            <p class="right">New NFT <img src="./assets/img/fire.png" class="fire" alt=""></p>
+                        </div>
+                    </div>
+                    <div class="discoverCard">
+                        <img src="./assets/img/arnold.jpeg" alt="nft" class="nft-img">
+                        <div class="l1">
+                            <p class="left">Mr Goat</p>
+                            <p class="right">2.345 GOAT</p>
+                        </div>
+                        <div class="l2">
+                            <p class="left">Fixed Price</p>
+                            <p class="right">2 <i class='bx bxs-heart' style="color: red;"></i></p>
+                        </div>
+                        <hr>
+                        <div class="l2">
+                            <p class="left"><i class='bx bx-line-chart'></i> Fixed Sale</p>
+                            <p class="right">New NFT <img src="./assets/img/fire.png" class="fire" alt=""></p>
+                        </div>
+                    </div>
+                </div>
+
+                <button class="discoverMore">Load More</button>
+
+
+            </div>
+        </section>
+        <!--========== FOOTER ==========-->
+        <footer class="footer">
+            <div class="footer-overlay">
+
+                <div class="newsletter">
+                    <h2>Suscribe to our newletter</h2>
+                    <p>Subscribe our newsletter to get more updates on our events and activities</p>
+                    <!-- The form -->
+                    <form class="news" action="">
+
+                        <input type="text" placeholder="Email" name="search">
+                        <button type="submit">Subscribe</button>
+
+                    </form>
+                </div>
+
+                <div class="footer__container bd-grid ">
+                    <div class="footer__content " style="margin-left: 0px;margin-bottom:40px;">
+
+
+                        <a href="./index.html" class=" "><img src="./assets/img/logo.png " style="height: 130px;width: 130px; " alt=" " srcset=" "></a>
+                        <span class="footer__description ">The new creative economy.</span>
+                        <div>
+                            <a href="# " class="footer__social "><i class='bx bxl-facebook'></i></a>
+                            <a href="# " class="footer__social "><i class='bx bxl-instagram'></i></a>
+                            <a href="# " class="footer__social "><i class='bx bxl-twitter'></i></a>
+                        </div>
+                        <div class="mode">
+                            <i class="bx bx-moon" id="mode"></i>
+                        </div>
+
+                    </div>
+
+                    <div class="footer__content ">
+                        <h3 class="footer__title ">Goat NFT</h3>
+                        <ul>
+                            <li><a href="# " class="footer__link ">Explore</a></li>
+                            <li><a href="# " class="footer__link ">My Items</a></li>
+                            <li><a href="# " class="footer__link ">How it works</a></li>
+                            <li><a href="./connect.html" class="footer__link ">Connect Wallet</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer__content ">
+                        <h3 class="footer__title ">Resources</h3>
+                        <ul>
+                            <li><a href="# " class="footer__link ">Documents </a></li>
+                            <li><a href="# " class="footer__link ">Community</a></li>
+                            <li><a href="# " class="footer__link ">FAQ</a></li>
+                            <li><a href="# " class="footer__link ">GOAT Token</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer__content ">
+                        <h3 class="footer__title ">Information</h3>
+                        <ul>
+                            <li><a href="# " class="footer__link ">Event</a></li>
+                            <li><a href="# " class="footer__link ">Contact us</a></li>
+                            <li><a href="# " class="footer__link ">Privacy Policies</a></li>
+                            <li><a href="# " class="footer__link ">Terms and Conditions</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <hr>
+
+                <p class="footer__copy">&#169; 2021 . All right reserved</p>
+            </div>
+        </footer>
+        <!--========== FOOTER END ==========-->
+    </main>
+
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="./assets/slick-1.8.1/slick/slick.min.js"></script>
+    <script src="./assets/js/main.js"></script>
+
+</body>
+
+</html>
